@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Upload Section</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="/Users/akash/Desktop/sih/style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="navbar">
+        <div class="robust"></div>
+        <div class="sidepanel">
+            <h3><a href="#">Image Test</a></h3>
+            <h3><a href="#">Contact</a></h3>
+            <h3><a href="#">About</a></h3>
+            <h3><a href="#">Video Test</a></h3>
+        </div>
+    </div>
+    <div class="heading">
+        <h1>PROTOTYPE</h1>
+        <h1>FOR ML MODEL</h1>
+    </div>
+    <div class="hero">
+        <div class="image_section">
+            <div class="textarea">
+                <h1>upload image here</h1>
+                <p>Upload an image and test your ML model. Our platform allows you to easily evaluate the performance of your model on various images. </p>
+            </div>
+            <div class="image">
+                <form action="#" method="post" enctype="multipart/form-data">
+                    <input type="file" accept="image/*" id="file-input" style="display: none;" />
+                </form>
+                
+                <!-- Image container where the uploaded image will be displayed -->
+                <div id="image-container">
+                    <img id="uploaded-image" src="" alt="">
+                    <label for="file-input" id="upload-button">Upload Image</label>
+                </div>
+            </div>
+        </div>
+        <div class="video_section">
+            <div class="textarea">
+                <h1>upload video here</h1>
+                <p>Upload a video and test your ML model. Evaluate the performance and accuracy of your machine learning model on different videos. </p>
+            </div>
+            <div class="video">
+                <form action="#" method="post" enctype="multipart/form-data">
+                    <input type="file" accept="video/*" id="video-input" style="display: none;" />
+                </form>
+                
+                <!-- Video container where the uploaded video will be displayed -->
+                <div id="video-container">
+                    <video id="uploaded-video" controls></video>
+                </div>
+                <label for="video-input" id="upload-button2">Upload Video</label>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
